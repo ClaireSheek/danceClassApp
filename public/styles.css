@@ -1,0 +1,119 @@
+@font-face {
+  font-family: oswald;
+  src: url(../Oswald-VariableFont_wght.ttf);
+}
+
+body {
+  /* background: url(TBD) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  background-color: rgb(240, 240, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #252433;
+  font-family: oswald;
+}
+
+nav {
+  display: flex;
+  height: 5vh;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 10px;
+  width: 100vw;
+  z-index: 1;
+  background: #ccccce;
+}
+
+a {
+color: #252433;
+text-decoration: none;
+}
+
+.mainContainer {
+  position: fixed;
+  width: 95vw;
+  height: 90vh;
+  bottom: 25px;
+  /* border: 3px solid white; */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 10vh;
+  align-items: center;
+  width: 90vw;
+  /* height: 90vh; */
+  /* border: 3px solid hotpink; */
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+.logo, .bookNow {
+  justify-content: center;
+  align-items: center;
+}
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  margin: auto;
+  display: flex;
+  width: 90%;
+  height: 5vh;  
+  justify-content: space-between;
+  background-color: #f0f0f3;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  min-height: 0;
+  scroll-snap-align: start;
+  margin-bottom: 10vh;
+}
+
+#returnToTop {
+  margin-bottom: 15vh;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #f0f0f3;
+  border: 3px solid #ccccce;
+  z-index: 1;
+}
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
